@@ -1,14 +1,14 @@
 //---------------------------------------------------------------------
 // SimulationCLI.java       by Dale/Joyce/Weems               Chapter 4
 //
-// Simulates customers waiting in queues. Customers always enter
+// Simulates customers waiting in mine.mine.ch06.mine.ch06.app.ch06.app.ch06.mine.ch06.app.ch06.app.queues. Customers always enter
 // the shortest queue.
 //
 // Input consists of customer information:
 //    Minimum and maximum customer interarrival time.
 //    Minimum and maximum customer service time.
 // Followed by a sequence of simulation instance information:
-//    Number of queues and customers.
+//    Number of mine.mine.ch06.mine.ch06.app.ch06.app.ch06.mine.ch06.app.ch06.app.queues and customers.
 //
 // Output includes, for each simulation instance:
 //    The average waiting time for a customer.
@@ -30,7 +30,7 @@ public class SimulationCLI
     int maxIAT;    // maximum interarrival time
     int minST;     // minimum service time
     int maxST;     // maximum service time
-    int numQueues; // number of queues
+    int numQueues; // number of mine.mine.ch06.mine.ch06.app.ch06.app.ch06.mine.ch06.app.ch06.app.queues
     int numCust;   // number of customers
 
     String skip;           // skip end of line after reading an integer
@@ -53,7 +53,7 @@ public class SimulationCLI
     do
     {
       // Get next simulation instance to be processed.
-      System.out.print("Enter number of queues: ");
+      System.out.print("Enter number of mine.mine.ch06.mine.ch06.app.ch06.app.ch06.mine.ch06.app.ch06.app.queues: ");
       numQueues = conIn.nextInt();     
       System.out.print("Enter number of customers: ");
       numCust = conIn.nextInt();    

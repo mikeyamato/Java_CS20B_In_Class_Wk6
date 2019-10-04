@@ -1,13 +1,13 @@
 //----------------------------------------------------------------------
 // SimGUI.java             by Dale/Joyce/Weems                 Chapter 5
 //
-// Simulates customers waiting in queues. Customers always enter
+// Simulates customers waiting in mine.mine.ch06.mine.ch06.app.ch06.app.ch06.mine.ch06.app.ch06.app.queues. Customers always enter
 // the shortest queue.
 //
 // Input consists of simulation instance information:
 //    Minimum and maximum customer interarrival time.
 //    Minimum and maximum customer service time.
-//    Number of queues and customers.
+//    Number of mine.mine.ch06.mine.ch06.app.ch06.app.ch06.mine.ch06.app.ch06.app.queues and customers.
 //
 // Assumes a friendly user, i.e., inputs are valid.
 //

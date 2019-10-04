@@ -2,7 +2,7 @@
 // Simulation.java           by Dale/Joyce/Weems              Chapter 4
 //
 // Models a sequence of customers being serviced
-// by a number of queues.
+// by a number of mine.mine.ch06.mine.ch06.app.ch06.app.ch06.mine.ch06.app.ch06.app.queues.
 //---------------------------------------------------------------------
 package ch04.simulation;
 
@@ -32,9 +32,9 @@ public class Simulation
   //                No time generated during simulation is > MAXTIME
   //
   // Simulates numCustomers customers entering and leaving the
-  // a queuing system with numQueues queues
+  // a queuing system with numQueues mine.mine.ch06.mine.ch06.app.ch06.app.ch06.mine.ch06.app.ch06.app.queues
   {
-    // the queues
+    // the mine.mine.ch06.mine.ch06.app.ch06.app.ch06.mine.ch06.app.ch06.app.queues
     LinkedGlassQueue<Customer>[] queues = new LinkedGlassQueue[numQueues]; 
 
     Customer nextCust;      // next customer from generator
@@ -53,7 +53,7 @@ public class Simulation
     Customer rearCust;      // customer at rear of shortest queue
     int finishTime;         // calculated finish time for customer being enqueued
 
-    // instantiate the queues
+    // instantiate the mine.mine.ch06.mine.ch06.app.ch06.app.ch06.mine.ch06.app.ch06.app.queues
     for (int i = 0; i < numQueues; i++)
       queues[i] = new LinkedGlassQueue<Customer>();
  
