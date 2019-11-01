@@ -9,7 +9,7 @@
 
 package TrickOrTreat4Students.src.houses;
 
-public interface CollectionInterface<T>
+public interface CollectionInterface<T> extends Iterable<T>
 {
   boolean add(T element);
   // Attempts to add element to this collection.
