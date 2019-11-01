@@ -1,6 +1,11 @@
 package ch05.apps;
 import support.*;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 public class FPDriver 
 {
   public static void main(String[] args)
@@ -25,5 +30,13 @@ public class FPDriver
     p1 = new FamousPerson("Aaron", "Adams", 1860, "Developed mechanical counting machine based on punched cards.");
     System.out.println("Should be negative: " + p1.compareTo(p2));
     System.out.println("Should be positive: " + p2.compareTo(p1));
+
+    p3 = new FamousPerson("Mike", "Yamato", 1990, "Cook");
+    ArrayList<FamousPerson> myList = new ArrayList();
+    myList.add(p3);
+    myList.add(p1);
+    myList.add(p2);
+    Collections.sort(myList);
+    System.out.println(myList);
   }
 }

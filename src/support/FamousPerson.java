@@ -7,6 +7,7 @@
 package support;
 
 import java.util.Comparator;
+import java.util.Objects;
 
 public class FamousPerson implements Comparable<FamousPerson>
 {
@@ -23,25 +24,35 @@ public class FamousPerson implements Comparable<FamousPerson>
   public String getFact() {return fact;}
   public int getYearOfBirth() {return yearOfBirth;}
 
-  @Override 
-  public boolean equals(Object obj)
-  // Returns true if 'obj' is a FamousPerson with same first and last 
-  // names as this FamousPerson, otherwise returns false.
-  {
-     if (obj == this)
-        return true;
-     else 
-     if (obj == null || obj.getClass() != this.getClass())
-        return false;
-     else
-     {
-        FamousPerson fp = (FamousPerson) obj; 
-        return (this.firstName.equals(fp.firstName) &&
-                this.lastName.equals(fp.lastName)); 
-     }
-  }
-  
-  public int compareTo(FamousPerson other)
+//  @Override
+//  public boolean equals(Object obj)
+//  // Returns true if 'obj' is a FamousPerson with same first and last
+//  // names as this FamousPerson, otherwise returns false.
+//  {
+//     if (obj == this)
+//        return true;
+//     else
+//     if (obj == null || obj.getClass() != this.getClass())
+//        return false;
+//     else
+//     {
+//        FamousPerson fp = (FamousPerson) obj;
+//        return (this.firstName.equals(fp.firstName) &&
+//                this.lastName.equals(fp.lastName));
+//     }
+//  }
+
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        FamousPerson that = (FamousPerson) o;
+        return Objects.equals(firstName, that.firstName) &&
+                Objects.equals(lastName, that.lastName);
+    }
+
+    public int compareTo(FamousPerson other)
   // Precondition: 'other' is not null
   //
   // Compares this FamousPerson with 'other' for order. Returns a 
